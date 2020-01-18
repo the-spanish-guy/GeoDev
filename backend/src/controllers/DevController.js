@@ -7,7 +7,7 @@ module.exports = {
   async index(req, res) {
     const devs = await Dev.find()
 
-    return res.json({devs})
+    return res.json( devs )
   },
 
   async store(req, res) {
@@ -41,6 +41,6 @@ module.exports = {
       })
     }
   
-    return res.json({dev})
+    return res.json( dev )
   }
 }

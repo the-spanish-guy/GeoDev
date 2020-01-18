@@ -1,0 +1,52 @@
+aside form {
+    margin-top: 30px;
+}
+
+/*Pegando todo .input-block que tenha um .input-block antes dele*/
+aside form .input-block + .input-block {
+    margin-top: 20px;
+}
+
+aside form .input-group {
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;/*cada grid irá ocupar 50% cada*/
+}
+
+aside form .input-group .input-block {
+    margin: 0;
+}
+
+aside form .input-block label {
+    color: #ACACAC;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+}
+aside form .input-block input {
+    width: 100%;
+    height: 32px;
+    font-size: 14px;
+    color: #666666;
+    border: 0;
+    border-bottom: 1px solid #EEEEEE
+}
+
+aside form button[type="submit"] {
+    width: 100%;
+    border: 0;
+    margin-top: 30px;
+    background-color: #FC7B6D;
+    border-radius: 2px;
+    padding: 15px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+aside form button[type="submit"]:hover {
+    transition: all .6s ease-in-out;
+    background-color: #CF6459;
+}

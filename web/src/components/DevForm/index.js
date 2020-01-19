@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 import './styles.css'
 
-function DevForm(onSubmit){
+function DevForm({ onSubmit }){
 
     const [ latitude, setLatitude ] = useState('')
     const [ longitude, setLongitude ] = useState('')
@@ -41,7 +41,7 @@ function DevForm(onSubmit){
     }
   
     return(
-        <form onSubmit={handleAddDev}>
+      <form onSubmit={handleAddDev}>
         <div className="input-block">
             <label htmlFor="github_username">Usuario do github</label>
             <input
@@ -91,7 +91,7 @@ function DevForm(onSubmit){
         </div>
 
         <button type="submit">Salvar</button>
-        </form>
+      </form>
     )
 }
 

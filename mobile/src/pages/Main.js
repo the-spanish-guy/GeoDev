@@ -9,7 +9,7 @@ function Main({ navigation }) {
   
   const [ devs, setDevs] = useState([])
   const [ currentRegion, setCurrernRegion ] = useState(null)
-  const [text, setText ] = setText('')
+  const [ techs, setTechs ] = useState('')
   
   useEffect(() => {
     async function loadInitialPosition() {
@@ -23,7 +23,7 @@ function Main({ navigation }) {
         setCurrernRegion({
           latitude,
           longitude,
-         latitudeDelta: 0.01,
+          latitudeDelta: 0.01,
           longitudeDelta: 0.01
         })
       }
@@ -98,7 +98,7 @@ function Main({ navigation }) {
           autoCapitalize="words"
           autoCorrect={false}
           value={techs}
-          onChangeText={setText}
+          onChangeText={setTechs}
         />
 
         <TouchableOpacity onPress={loadDevs} style={style.loadButton}>

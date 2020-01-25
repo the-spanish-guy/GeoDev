@@ -4,13 +4,14 @@ const routes = require('./routes')
 const cors = require('cors')
 const http = require('http')
 const { setWebSocket } = require('./websocket')
+require('dotenv/config')
 
 const app = express()
 const server = http.Server(app)
 
 setWebSocket(server)
 
-mongoose.connect('url for mongo_database',{
+mongoose.connect(process.env.DB_MONGO,{
   useNewUrlParser: true,
   useUnifiedTopology: true
 })

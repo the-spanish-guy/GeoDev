@@ -5,5 +5,5 @@ Seguindo a série de videos fornecida pela [Rocketseat](https://github.com/Rocke
 Separado por 3 pastas :
 
 * backend
-* ~~frontend/web~~
-* ~~mobile~~
+* frontend/web
+* mobile
